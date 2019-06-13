@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <politico-icon name="calendar" :height="80" :width="80" />
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -34,8 +35,11 @@
 <script lang="ts">
 import Vue from 'vue';
 
+import { PoliticoIcon } from '@politico/vue-components';
+
 export default Vue.extend({
   name: 'HelloWorld',
+  components: { PoliticoIcon },
   props: {
     msg: String,
   },
